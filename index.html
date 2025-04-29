@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HS CLOTHING</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="fashion, clothing, online shopping">
+  <meta name="description" content="HS Clothing - High Quality Clothing Fashion">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+   .hover-arrow {
+  font-size: 4rem; /* Increased from 2rem to 4rem */
+  color: #333;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-arrow:hover {
+  color: #ff4d6d;
+}
+
+.btn-multicolor {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease;
+}
+
+.btn-multicolor::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(136, 0, 0), orange, yellow, rgb(245, 250, 245), blue, indigo, violet);
+  transition: left 0.6s ease;
+  z-index: -1;
+}
+
+.btn-multicolor:hover::before {
+  left: 0;
+}
+
+.btn-multicolor:hover {
+  color: #fff;
+  border-color: transparent;
+}
+
+@keyframes rainbow {
+    0% { color: rgb(252, 207, 7); }
+    20% { color: rgb(24, 0, 161); }
+    40% { color: rgb(250, 250, 250); }
+    60% { color: rgba(167, 0, 0, 0.836); }
+    80% { color: rgba(235, 163, 9, 0.644); }
+    100% { color: rgb(3, 3, 3); }
+}
+
+.rainbow-text {
+    animation: rainbow 3s infinite; /* Duration of 3 seconds, loops infinitely */
+    font-size: 1.5rem; /* Optional: Adjust size as needed */
+    font-weight: bold; /* Optional: For extra emphasis */
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div id="preloader" class="preloader-wrapper">
+    <div class="preloader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-menu d-flex navbar fixed-top navbar-expand-lg py-4">
+    <div class="container">
+      <div class="main-logo">
+        <a href="index.html">
+          <img src="images/Hgif.gif" alt="logo" class="img-fluid">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+        <div class="offcanvas-header justify-content-center">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-between">
+          <ul class="navbar-nav d-flex gap-md-3 ps-lg-5 mb-0">
+            <li class="nav-item"><a href="index.html" class="nav-link mx-2 active">Home</a></li>
+            <li class="nav-item"><a href="Clothing.html" class="nav-link mx-2">Clothing</a></li>
+            <li class="nav-item"><a href="Shoes.html" class="nav-link mx-2">Shoes</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link mx-2">About Us</a></li>
+          
+            <li class="nav-item"><a href="signup.php" class="nav-link mx-2">Become a Member</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" style="
+    background: url('images/Fashion.webp') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-color: #000; /* fallback color */
+  ">
+    <div class="container">
+      <h2 class="display-1 text-uppercase">HS Wears</h2>
+      <p class="text-uppercase mb-4 rainbow-text">High quality cool clothing fashion</p>
+
+      <a href="Clothing.html" class="btn btn-outline-light btn-lg btn-multicolor">
+        Start Shopping <i class="icon icon-arrow-io fs-5 align-text-bottom"></i>
+      </a>
+      
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="padding-medium">
+    <div class="container text-center">
+      <h3 class="text-uppercase mb-5">Shop by Category</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="Clothing.html" class="category-card">
+            <img src="images/f447a72c2b172e7948bafa12782bec31.webp" alt="Clothing" class="img-fluid">
+            <h4>Clothing</h4>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="Shoes.html" class="category-card">
+            <img src="images/air.png" alt="Shoes" class="img-fluid">
+            <h4>Shoes</h4>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="Accessories.html" class="category-card">
+            <img src="images/clothing-2.png" alt="Accessories" class="img-fluid">
+            <h4>Accessories</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</section>
+
+<section id="service" class="padding-medium">
+  <div class="container">
+    <div class="row g-md-5 pt-4">
+      <div class="col-md-3 my-3">
+        <div class="card">
+          <div>
+            <iconify-icon class="service-icon text-primary fs-2" icon="ci:shopping-cart-02"></iconify-icon>
+          </div>
+          <h4 class="py-2 m-0">Free Delivery</h3>
+            <div class="card-text">
+              <p class="blog-paragraph fs-6">Place your order online and Enjoy free Delivery.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-3 my-3">
+        <div class="card">
+          <div>
+            <iconify-icon class="service-icon text-primary fs-2" icon="tdesign:secured"></iconify-icon>
+          </div>
+          <h4 class="py-2 m-0">100% secure payment</h3>
+            <div class="card-text">
+              <p class="blog-paragraph fs-6">Methods of payment We accept credit and debit cards : Visa and MasterCard
+
+              </p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-3 my-3">
+        <div class="card">
+          <div>
+            <iconify-icon class="service-icon text-primary fs-2" icon="la:award"></iconify-icon>
+          </div>
+          <h4 class="py-2 m-0">Quality guarantee</h3>
+            <div class="card-text">
+              <p class="blog-paragraph fs-6"> HS Clothing offers an Ironclad Guarantee on all sales, committing to repairing, replacing, or refunding any clothing that does not live up to expectation.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-3 my-3">
+        <div class="card">
+          <div>
+            <iconify-icon class="service-icon text-primary fs-2" icon="solar:euro-outline"></iconify-icon>
+
+          </div>
+          <h4 class="py-2 m-0">Daily Offer</h3>
+            <div class="card-text">
+              <p class="blog-paragraph fs-6">Only Today, Enjoy Discount Wear Up To 20% Off Your Purchase. Hurry & Shop Now.</p>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Brand Message Section -->
+  <section id="about-brand" class="text-center my-5">
+    <div class="container">
+      <p class="lead">
+        HS Clothing is designed for every lifestyle. Whether you're dressing up, keeping it casual, stepping out in fresh kicks, or accessorizing your outfit – our collections are made to move with you. From everyday errands to standout events, we’ve got you covered.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section id="featured-products" class="padding-medium">
+    <div class="container text-center">
+      <div class="mb-3">
+        <h3 class="text-uppercase">Featured Products</h3>
+        <p class="text-muted">Check out some of our most loved pieces this season.</p>
+        <div class="hover-arrow">↓</div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img src="images/ame.webp" alt="Product 1" class="img-fluid">
+              <h5>PU Leather Jacket</h5>
+              <p>€49.99</p>
+             
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img src="images/yt.jpg" alt="Product 2" class="img-fluid">
+              <h5>Raebook</h5>
+              <p>€59.99</p>
+           
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img src="images/gra.webp" alt="Product 3" class="img-fluid">
+              <h5>Quilted Bomber Jacket</h5>
+              <p>€69.99</p>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 HS Clothing. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    window.addEventListener('load', function () {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

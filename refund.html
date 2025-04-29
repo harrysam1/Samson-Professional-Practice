@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refund Request - HS Clothing</title>
+  <link rel="stylesheet" href="refund.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/Hgif.gif" alt="logo" class="logo">
+    </div>
+    <div class="title-container">
+      <h1 class="title">HS Clothing - Refund Request</h1>
+      <p class="subtitle">Submit your refund request quickly and easily!</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="refund-form-section">
+      <h2>Request a Refund</h2>
+      <form id="refundForm">
+        <label for="orderNumber">Order Number:</label>
+        <input type="text" id="orderNumber" class="input-field" placeholder="Enter your order number" required>
+
+        <label for="reason">Reason for Refund:</label>
+        <textarea id="reason" class="input-field" placeholder="Explain why you want a refund" required></textarea>
+
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </section>
+
+    <section class="refund-feedback-section">
+      <h2>Refund Status</h2>
+      <div id="refundFeedback" class="feedback-box">
+        <!-- Refund status feedback will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HS Clothing. All Rights Reserved.</p>
+  </footer>
+
+  <script src="refund.js"></script>
+</body>
+</html>

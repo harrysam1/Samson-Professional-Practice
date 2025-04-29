@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css">
+
+   <!--=============== SWIPER CSS (CDN) ===============-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="clothing-style.css">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+   
+
+   <title>Shop</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="index.html" class="nav__link">Home</a>
+               </li>
+               <li class="nav__item">
+                  <a href="Shoes.html" class="nav__link">Shoes </a>
+               </li>
+                 <div id="cart-icon">
+   <i class="ri-shopping-bag-line"></i>
+   <span class="cart-item-count"></span>
+</div>
+</header>
+            </ul>
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+        
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home">
+         <div class="home__container container">
+            <div class="home__content">
+               <div class="home__circle">
+                  <div class="home__subcircle"></div>
+                  
+               </div>
+
+               <nav class="main-menu d-flex navbar fixed-top navbar-expand-lg py-4 ">
+                <div class="container">
+                  <div class="main-logo">
+                    <a href="index.html">
+                      <img src="images/Hgif.gif" alt="logo" class="img-fluid">
+                    </a>
+                  </div>
+
+               <div class="home__swiper swiper">
+                  <div class="swiper-wrapper">
+                     <article class="home__article swiper-slide">
+                        <img src="images/clothing-1.png" alt="image" class="home__img">
+                        <h2 class="home__product">Core Hoodie</h2>
+                        <h3 class="home__price">€125</h3>
+                     </article>
+
+                     <article class="home__article swiper-slide">
+                        <img src="images/clothing-1.png" alt="image" class="home__img">
+                        <h2 class="home__product">Stylish Backpack</h2>
+                        <h3 class="home__price">€115</h3>
+                     </article>
+
+                     <article class="home__article swiper-slide">
+                        <img src="images/clothing-2.png" alt="image" class="home__img">
+                        <h2 class="home__product">Premiere Pants</h2>
+                        <h3 class="home__price">€125</h3>
+                     </article>
+
+                     <article class="home__article swiper-slide">
+                        <img src="images/clothing-4.png" alt="image" class="home__img">
+                        <h2 class="home__product">Black Shorts</h2>
+                        <h3 class="home__price">€75</h3>
+                     </article>
+
+                     <article class="home__article swiper-slide">
+                        <img src="images/clothing-2.png" alt="image" class="home__img">
+                        <h2 class="home__product">Cool T-Shirt</h2>
+                        <h3 class="home__price">€65</h3>
+                     </article>
+                  </div>
+               </div>
+
+               <!-- Navigation buttons -->
+               <div class="swiper-button-prev">
+                  <i class="ri-arrow-left-line"></i>
+               </div>
+               <div class="swiper-button-next">
+                  <i class="ri-arrow-right-line"></i>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      
+   </main>
+
+</main>
+<section class="section__container sale__container">
+   <h2 class="section__title">On Sale</h2>
+   <div class="sale__grid">
+     <div class="sale__card">
+       <img src="images/sale-1.jpg"sale" />
+       <div class="sale__content">
+         <p class="sale__subtitle">MAN OUTERWEAR</p>
+         <h4 class="sale__title">sale <span>40%</span> off</h4>
+         <p class="sale__subtitle">- DON'T MISS -</p>
+         <button class="btn sale__btn">SHOP NOW</button>
+       </div>
+     </div>
+     <div class="sale__card">
+       <img src="images/mens-offers-nav1-140125.webp"sale" />
+       <div class="sale__content">
+         <p class="sale__subtitle">Bron brown Jacket</p>
+         <h4 class="sale__title">sale <span>25%</span> off</h4>
+         <p class="sale__subtitle">- DON'T MISS -</p>
+         <button class="btn sale__btn">SHOP NOW</button>
+       </div>
+     </div>
+     <div class="sale__card">
+       <img src="images/sale-3.jpg"sale" />
+       <div class="sale__content">
+         <p class="sale__subtitle">JACKETS</p>
+         <h4 class="sale__title">sale <span>20%</span> off</h4>
+         <p class="sale__subtitle">- DON'T MISS -</p>
+         <button class="btn sale__btn">SHOP NOW</button>
+       </div>
+     </div>
+   </div>
+ </section>
+ 
+
+ 
+<div class="cart">
+<h2 class="cart-title">Your Cart</h2>
+<div class="cart-content">
+   
+</div>
+<div class="total">
+   <div class="total-title">Total</div>
+   <div class="total-price">€0</div>
+</div>
+<a href="checkout.html">
+  <button class="btn-buy">Buy Now</button>
+</a>
+<i class="ri-close-line" id="cart-close"></i>
+</div>
+
+<section class="shop">
+<h1 class="section-title">Shop Products</h1>
+<div class="product-content">
+   <div class="product-box">
+       <div class="img-box">
+           <img src="images/product1.jpg">
+       </div>
+       <h2 class="product-title">Casual Black Polo</h2>
+       <div class="price-and-cart">
+           <span class="price">€100</span>
+           <i class="ri-shopping-bag-line add-cart"></i>
+       </div>
+   </div>
+
+   <div class="product-box">
+       <div class="img-box">
+           <img src="images/product2.jpg">
+       </div>
+       <h2 class="product-title">Waterproof Hoodie</h2>
+       <div class="price-and-cart">
+           <span class="price">€50</span>
+           <i class="ri-shopping-bag-line add-cart"></i>
+       </div>
+   </div>
+
+   <div class="product-box">
+       <div class="img-box">
+           <img src="images/product3.jpg">
+       </div>
+       <h2 class="product-title">Blue Sweatshirt</h2>
+       <div class="price-and-cart">
+           <span class="price">€20</span>
+           <i class="ri-shopping-bag-line add-cart"></i>
+       </div>
+   </div>
+
+   <div class="product-box">
+       <div class="img-box">
+           <img src="images/product4.jpg">
+       </div>
+       <h2 class="product-title">Hooded Urban Jacket</h2>
+       <div class="price-and-cart">
+           <span class="price">€55</span>
+           <i class="ri-shopping-bag-line add-cart"></i>
+       </div>
+   </div>
+
+   <div class="product-box">
+       <div class="img-box">
+           <img src="images/product5.jpg">
+       </div>
+       <h2 class="product-title">Cold Weather Jacket</h2>
+       <div class="price-and-cart">
+           <span class="price">€120</span>
+           <i class="ri-shopping-bag-line add-cart"></i>
+       </div>
+   </div>
+
+   <div class="product-box">
+       <div class="img-box">
+           <img src="images/product6.jpg">
+       </div>
+       <h2 class="product-title">Sporty Jacket</h2>
+       <div class="price-and-cart">
+           <span class="price">€80</span>
+           <i class="ri-shopping-bag-line add-cart"></i>
+       </div>
+   </div>
+
+   <div class="product-box">
+       <div class="img-box">
+           <img src="images/product7.jpg">
+       </div>
+       <h2 class="product-title">Olive Heritage Hoodie</h2>
+       <div class="price-and-cart">
+           <span class="price">€62</span>
+           <i class="ri-shopping-bag-line add-cart"></i>
+       </div>
+   </div>
+
+   <div class="product-box">
+       <div class="img-box">
+           <img src="images/product8.jpg">
+       </div>
+       <h2 class="product-title">Bright Horizon Polo</h2>
+       <div class="price-and-cart">
+           <span class="price">€70</span>
+           <i class="ri-shopping-bag-line add-cart"></i>
+       </div>
+   </div>
+</div>
+</section>
+
+
+<script src="script.js"></script>
+
+
+ <section class="news">
+   <div class="section__container news__container">
+     <h2 class="section__title">Latest News</h2>
+     <div class="news__grid">
+       <div class="news__card">
+         <img src="images/cmm01031_burgundy_xl.jpg" alt="news" />
+         <div class="news__details">
+           <p>
+             TREND<i class="ri-checkbox-blank-circle-fill"></i>
+             <span>H-S</span>
+             <i class="ri-checkbox-blank-circle-fill"></i> MAY 2, 2025
+           </p>
+           <h4>Seasonal Trends</h4>
+           <hr />
+           <p>
+             Discuss the latest fashion trends for the current season and
+             offer tips and ideas on how to incorporate these trends into
+             your wardrobe.
+           </p>
+           <a href="#"><i class="ri-arrow-right-line"></i></a>
+         </div>
+       </div>
+       <div class="news__card">
+         <img src="images/mmmmm.webp" alt="news" />
+         <div class="news__details">
+           <p>
+             FASHION <i class="ri-checkbox-blank-circle-fill"></i>
+             <span>H-S</span>
+             <i class="ri-checkbox-blank-circle-fill"></i> MAY 15, 2025
+           </p>
+           <h4>Fashion Tips and Advice</h4>
+           <hr />
+           <p>
+             Provide your readers with practical tips and advice on how to
+             dress for different occasions, body types, or style preferences.
+           </p>
+           <a href="#"><i class="ri-arrow-right-line"></i></a>
+         </div>
+       </div>
+       <div class="news__card">
+         <img src="images/down.jpg" alt="news" />
+         <div class="news__details">
+           <p>
+             STYLE <i class="ri-checkbox-blank-circle-fill"></i>
+             <span>H-S</span>
+             <i class="ri-checkbox-blank-circle-fill"></i> JUNE 22, 2025
+           </p>
+           <h4>Sustainable Fashion</h4>
+           <hr />
+           <p>
+             Cover the growing trend of eco-conscious fashion and explore the
+             various ways to be sustainable in your fashion choices.
+           </p>
+           <a href="#"><i class="ri-arrow-right-line"></i></a>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <section class="section__container brands__container">
+   <div class="brand__image">
+     <img src="images/brand-2.png" alt="brand" />
+   </div>
+   <div class="brand__image">
+     <img src="images/brand-1.png" alt="brand" />
+   </div>
+   <div class="brand__image">
+     <img src="images/brand-3.png" alt="brand" />
+   </div>
+   <div class="brand__image">
+     <img src="images/brand-4.png" alt="brand" />
+   </div>
+   <div class="brand__image">
+     <img src="images/brand-5.png" alt="brand" />
+   </div>
+   <div class="brand__image">
+     <img src="images/brand-6.png" alt="brand" />
+   </div>
+ </section>
+
+ <hr />
+
+ <footer class="section__container footer__container">
+   <div class="footer__col">
+     <h4 class="footer__heading">CONTACT INFO</h4>
+     <p>
+       <i class="ri-map-pin-2-fill"></i> 1, Od Dblin road Galway Ireland
+     </p>
+     <p><i class="ri-mail-fill"></i> HSclothing@gmail.com
+     <p><i class="ri-phone-fill"></i> (+353)565 79</p>
+   </div>
+   <div class="footer__col">
+      <h4 class="footer__heading">COMPANY</h4>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">About Us</a></p>
+      
+     
+      
+  </div>
+  <div class="footer__col">
+      <h4 class="footer__heading">USEFUL LINK</h4>
+    
+      <p><a href="refund.html">Refund</a></p>
+    
+      <p><a href="feedback.html">Feedback</a></p>
+  </div>
+  
+   <div class="footer__col">
+     <h4 class="footer__heading">INSTAGRAM</h4>
+     <div class="instagram__grid">
+       <img src="images/e1.webp" alt="instagram" />
+       <img src="images/instagram-2.jpg" alt="instagram" />
+       <img src="images/uu.webp" alt="instagram" />
+       <img src="images/collection.avif" alt="instagram" />
+       <img src="images/instagram-5.jpg" alt="instagram" />
+       <img src="images/instagram-6.jpg" alt="instagram" />
+     </div>
+   </div>
+ </footer>
+
+ <hr />
+
+ <div class="section__container footer__bar">
+   <div class="copyright">
+     Copyright © 2025 Web Design . All rights reserved.
+   </div>
+   <div class="footer__form">
+     <form>
+       <input type="text" placeholder="ENTER YOUR EMAIL" />
+       <button class="btn" type="submit">SUBSCRIBE</button>
+     </form>
+   </div>
+ </div>
+</body>
+</html>
+
+
+
+   <!--=============== SWIPER JS (CDN) ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         var swiper = new Swiper(".home__swiper", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+               delay: 3000,
+               disableOnInteraction: false,
+            },
+         });
+      });
+   </script>
+
+   
